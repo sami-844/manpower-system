@@ -1,0 +1,34 @@
+{
+  "name": "manpower-system",
+  "private": true,
+  "packageManager": "bun@1.4.2",
+  "scripts": {
+    "build:demo": "bun run --filter @mms/web build:demo",
+    "deploy": "bun run build:demo && wrangler deploy",
+    "gates": "bun scripts/gates.ts",
+    "agent:doctor": "bun scripts/agent-doctor.ts",
+    "typecheck": "bun run --filter '*' typecheck",
+    "test": "bun run --filter '*' test",
+    "test:tooling": "bun test ./.claude/hooks",
+    "test:mutation": "bun run --filter @mms/core test:mutation",
+    "dev:api": "bun run --filter @mms/api dev",
+    "dev:web": "bun run --filter @mms/web dev",
+    "db:migrate": "bun run --filter @mms/api db:migrate",
+    "db:seed": "bun run --filter @mms/api db:seed"
+  },
+  "engines": {
+    "bun": ">=1.4.0"
+  },
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "trustedDependencies": [
+    "esbuild",
+    "@swc/core",
+    "@tauri-apps/cli"
+  ],
+  "devDependencies": {
+    "wrangler": "4.158.0"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "@jsmastery/skills",
+  "version": "2.0.0",
+  "description": "A phase based engineering workflow as Agent Skills. Takes a change from a vague idea to shipped, verified, documented code, for any AI coding agent.",
+  "keywords": [
+    "claude-code",
+    "cursor",
+    "ai-coding",
+    "skills",
+    "agent-skills",
+    "developer-tools",
+    "javascript-mastery"
+  ],
+  "homepage": "https://github.com/JavaScript-Mastery-Pro/skills",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JavaScript-Mastery-Pro/skills.git"
+  },
+  "license": "MIT",
+  "author": "JavaScript Mastery",
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "check": "node scripts/check-portability.mjs",
+    "test": "npm run check",
+    "tokens": "node scripts/analyze-token-usage.mjs"
+  }
+}

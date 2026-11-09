@@ -1,0 +1,14 @@
+node_modules/
+dist/
+coverage/
+reports/
+.stryker-tmp/
+*.log
+.env
+.env.local
+**/target/
+apps/desktop/src-tauri/gen/
+test-results/
+playwright-report/
+.DS_Store
+.wrangler/

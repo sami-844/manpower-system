@@ -1,0 +1,23 @@
+{
+  // Self-contained on purpose: Bun 1.4 ignores "experimentalDecorators" in a tsconfig
+  // that uses "extends", which breaks NestJS at startup. Keep these in sync with
+  // ../../tsconfig.base.json. Every API test fails at startup if this breaks.
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2024"],
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": false,
+    "types": ["bun"]
+  },
+  "include": ["src", "test", "drizzle.config.ts"]
+}

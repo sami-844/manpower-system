@@ -1,0 +1,9 @@
+// Hosted client demo on Cloudflare Workers (DECISIONS A20). Static assets only: the web app built
+// with `--mode demo` answers its API calls in the browser from fictional data (apps/web/src/demo/server.ts).
+// Production hosting stays AWS (A10). Deploy: the README button, or `bun run deploy` after `bunx wrangler login`.
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "manpower-system",
+  "compatibility_date": "2026-11-04",
+  "assets": { "directory": "./apps/web/dist" }
+}

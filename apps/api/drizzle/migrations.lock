@@ -1,0 +1,4 @@
+# SHA-256 of every migration. Never edit a line; add new ones with `bun run gates --update-lock`.
+76652e0b0b68f939868a8b76260d6b95c2c7be42f61e38fc3190296369af92b5  0000_init.sql
+670b7ddbc76b0173a30bb2e96063e5ac983fb56876882abee7d64560a3e85197  0001_audit_append_only_and_worker_codes.sql
+a99805733e169b4dab29c47c1215158bc05c5681d0121dfacc20758db4651676  0002_sync_worker_code_default.sql

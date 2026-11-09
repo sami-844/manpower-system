@@ -1,0 +1,13 @@
+[package]
+name = "print-spooler"
+version = "0.1.0"
+edition = "2021"
+description = "Silent batch printing of PDFs to a named printer (payslips, ID cards, labels)."
+license = "UNLICENSED"
+publish = false
+
+[dependencies]
+printers = "2.3"
+serde = { version = "1", features = ["derive"] }
+
+[dev-dependencies]

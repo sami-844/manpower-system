@@ -1,0 +1,2 @@
+# PDFs are byte-exact (the print-spooler embeds assets/test-page.pdf); never convert their line endings.
+*.pdf binary
